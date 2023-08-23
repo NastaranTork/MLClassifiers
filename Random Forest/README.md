@@ -13,3 +13,20 @@ Random Forest is made out of decision trees and not only has the simplification 
 __As a result, the whole point of thr random forest is bootstap + aggregating = bagging. Bootstapping makes new data for each random tree and using subset of features leads to correlation between trees.
 
 __log n^2 (n is the total number of features) can be a good idea for number of features for each tree.
+
+## Implementation
+**I) Data Evaluation:** Depends on the data and concept of the project, you can use different ways to evaluate your data but some tricks are general like: data.shape, data.describe() [for quick summary statistics], plot.
+
+**II) Data Preparation:** 
+      __One-Hot Encoding: Converting categorical features to numerical ones without an arbitrary ordering.
+      
+      __Features and Target: Specifying the feature that you wanna predict and removing it from your data
+      
+      __Trainnig and Testing: Splitting your data
+      
+      __Baseline: a maximum error that you hope to decrease it by prediction ability if your model
+      
+**III) Training Data:** In this step, you just need to import the model that you wanna use (here we used Random Forest). Then you have to define your model parameters and in random forest, I just needed to define the number of decision trees
+
+**IV) Testing Model:**  Calculate the error of your model by using testing data
+
